@@ -3,3 +3,47 @@ background-color: red;
 
 
 }
+video{
+
+    width: 300px;
+}
+time{
+
+margin-left: 1120px;
+color: blue;
+
+
+} 
+li{
+
+margin-left: 100px;
+
+
+}
+
+
+
+
+
+ a{
+
+    color: red;
+    text-decoration: none;
+
+}
+#class{
+margin-left: 520px;
+color: red;
+border: 5px double chartreuse;
+width: 20%;
+background-color: aquamarine;
+border-radius: 5px;
+
+}
+footer{
+
+text-align: center;
+
+color: red;
+
+}
