@@ -1,0 +1,26 @@
+nav > ul{
+
+    display: flex;
+    
+}
+nav li{
+
+list-style: none;
+margin-left: 40px;
+padding: 10px;
+color: red;
+
+}
+nav li a{
+
+text-decoration: none;
+
+}
+nav li:hover{
+
+border: 2px double aquamarine;
+    background-color: aquamarine;
+    border-radius: 22px;
+    box-shadow: 2px 3px 4px blue;
+
+}

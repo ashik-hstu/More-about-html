@@ -4,6 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form & table</title>
+<link rel="stylesheet" href="styles-html/nav..css">
+<header>
+<nav>
+<ul>
+
+<li><a href="audio-video.html">video</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="form&table.html">Table</a></li>
+<li><a href="selectors.html">select </a></li>
+
+</ul>
+
+</nav>
+</header>
+
 
 <style>
 
@@ -12,11 +27,11 @@ legend{
 ;color: red;
 
 }
-label{
+label{ 
 
     display: block;
     margin-bottom: 12px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 fieldset{
 
@@ -69,11 +84,55 @@ footer{
     margin-bottom: 100px;
 }
 
+.log{
+
+text-align: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center; 
+border: 4px solid black;
+border-radius: 10px;
+box-shadow: 10px 10px 10px black;
+height: 45vh;
+width: 22vw;
+padding: 0px;
+}
+
+.table{
+
+display: flex;
+justify-content: center;
+
+}
+
+.reset{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.reset input{
+margin-top: 15px;
+width: 15%;
+
+}
+.head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.last{
+    display: flex;
+    justify-content: center;
+
+padding-left: 5px;
+
+}
+
+
 
 </style>
-
-
-
 
 </head>
 <body>
@@ -115,7 +174,6 @@ background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?
 </article>
 <form action="">
 </fieldset><br><br></section>
-border-radius: 5px;
 <fieldset style="width:20% ;"><legend style="border: 3px solid violet; color: darkred;text-decoration: none;box-shadow: 3px 3px 3px red;
 border-radius: 5px;
     ">Choose your one fav Anime</legend>
@@ -165,46 +223,43 @@ box-shadow:5px 5px 5px red;">Choose your one or two fav Manga</legend>
 </label>
 
 </fieldset>
-
-<div style="padding-left: 150px;">
 <br><br>
-<h2 style="text-align: center;color: red; border: 3px double chartreuse;box-shadow: 5px 5px 10px black; width: 40%;
+<div class="head">
+<h2 style="color: red; border: 3px double chartreuse;box-shadow: 5px 5px 10px black; width: 40%;
 border-radius: 5px;
 ">Please fill up the from given below</h2>
-<br>
+</div>
+<div class="last">
+<div class="log" >
 <label for="name">Your Name:
-    <input type="text" id="name" placeholder="Your Full Name">
+<input type="text" id="name" placeholder="Your Full Name" required>
 </label>
 <label for="email">Email:
-    <input type="email" id="email" placeholder="Your Email">
+<input type="email" id="email" placeholder="Your Email" required>
 </label>
 <label for="Phone">Phone:
-    <input type="tel" id="Phone" placeholder="Your Phone Number">
+<input type="tel" id="Phone" placeholder="Your Phone Number" required>
 </label>
-<label for="age">Age:
-    <input type="number" id="age" placeholder="Your Age">
+<label for="age">Age: <input type="number" id="age" placeholder="Your Age" required>
 </label>
 <label for="Sex">Sex:
-
-    <select name="" id="Sex">
+<select name="" id="Sex">
 <option value="male">Male</option>
 <option value="female">Female</option>
-
-
-    </select>
+</select>
 </label>
 
 <label for="country">Country:
-    <input type="text" id="country" placeholder="Your Country">
+<input type="text" id="country" placeholder="Your Country" required>
 </label>
-<input type="reset" style="color:red;margin-left: 50px;">
+<input type="reset" style="color:red;margin-left: 230px;">
 
-<input type="submit" value="Submit" style="color: blue;margin-left: 12px;">
+
 </div>
-
+</div>
 </form>
-
-<table style="margin-left: 220px;margin-top: 85px;
+<div class="table">
+<table style="margin-top: 85px;
 border-radius: 20px;
 ">
    <caption><h3 style="color:red ; text-decoration:2px underline black;"> About Anime</h3></caption>
@@ -277,16 +332,17 @@ border-radius: 20px;
 </tfoot>
 
 
-</table>    
+</table>   </div> 
  <br><br><br>
  <form action="">
  <label for="comment" style="color:red ;margin-left: 50px;margin-bottom: 0px;">Write your Opinion:
 </label>
-<textarea name="" id="" cols="100" rows="10" style="border:3px solid chartreuse;box-shadow: 10px 10px 10px black;padding: 10px 10px;margin-left: 50px;">
+<textarea name="" id="" cols="100" rows="10" style="border:3px solid chartreuse;box-shadow: 10px 10px 10px black;padding: 10px 10px;margin-left: 33px;">
 
 </textarea>
-<br><br>
-<input type="reset" value="Rewrite comment" style="margin-left: 680px;border: 2px solid red;box-shadow: 3px 3px 3px red;color: blue;">
+<br><br><div class="reset">
+<input type="reset" value="Rewrite comment" style="border: 2px solid red;box-shadow: 3px 3px 3px red;color: blue;">
+<input type="submit" value="Submit" style="color: blue;"></div>
 </form>
 
 <footer>
@@ -294,104 +350,6 @@ border-radius: 20px;
 &copy;All Rights Reserved by Ashik.
 
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
