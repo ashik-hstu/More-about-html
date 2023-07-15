@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +24,52 @@ border: 5px double red;
 
 }
 
+input{
+
+color: crimson;
+
+}
+::placeholder{
+    color:darkblue;
+text-align: center;
+}
+i{
+
+    color: red;
+    text-decoration:2px underline blueviolet;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+table{
+
+border-collapse: collapse;
+border: 5px double red;
+box-shadow: 15px 15px 20px black;
+border-radius: 5px;
+
+}
+
+
+
+
+
+
+th ,td{
+
+border: 1px solid black;
+padding: 5px 5px; 
+text-align: center;
+
+}
+footer{
+
+    text-align: center;
+    color:red;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
 </style>
 
 
@@ -33,7 +78,7 @@ border: 5px double red;
 </head>
 <body>
 
-<h1 style="text-align: center; color: blueviolet; border: 3px solid red; width: 50%; margin-left: 300px;
+<h1 style="text-align: center; color: blueviolet; border: 3px solid red; width: 50%; margin-left: 300px;box-shadow: 10px 10px 10px red;border-radius: 10px;
 background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?</h1>   
 <article>
 <section>
@@ -42,7 +87,6 @@ background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?
 <fieldset><legend><h2>What is Anime?</h2></legend>
 <div>
    Anime (Japanese: アニメ, IPA: [aɲime] (listen)) is hand-drawn and computer-generated animation originating from Japan. Outside Japan and in English, anime refers specifically to animation produced in Japan.[1] However, in Japan and in Japanese, anime (a term derived from a shortening of the English word animation) describes all animated works, regardless of style or origin. Animation produced outside Japan with similar style to Japanese animation is commonly referred to as anime-influenced animation.
-
   <p> The earliest commercial Japanese animations date to 1917. A characteristic art style emerged in the 1960s with the works of cartoonist Osamu Tezuka and spread in following decades, developing a large domestic audience. Anime is distributed theatrically, through television broadcasts, directly to home media, and over the Internet. In addition to original works, anime are often adaptations of Japanese comics (manga), light novels, or video games. It is classified into numerous genres targeting various broad and niche audiences.
 </p>
   <p>Anime is a diverse medium with distinctive production methods that have adapted in response to emergent technologies. It combines graphic art, characterization, cinematography, and other forms of imaginative and individualistic techniques.[2] Compared to Western animation, anime production generally focuses less on movement, and more on the detail of settings and use of "camera effects", such as panning, zooming, and angle shots.[2] Diverse art styles are used, and character proportions and features can be quite varied, with a common characteristic feature being large and emotive eyes.[3]
@@ -67,9 +111,14 @@ background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?
     
     Since the 1950s, manga has become an increasingly major part of the Japanese publishing industry.[8] By 1995, the manga market in Japan was valued at ¥586.4 billion ($6–7 billion),[9] with annual sales of 1.9 billion manga books and manga magazines (also known as manga anthologies) in Japan (equivalent to 15 issues per person).[10] In 2020 Japan's manga market value hit a new record of ¥612.6 billion due to the fast growth of digital manga sales as well as increase of print sales.[11][12] In 2022 Japan's manga market hit yet another record value of ¥675.9 billion.[13][14] Manga have also gained a significant worldwide readership.[15][16][17][18] Beginning with the late 2010s manga started massively outselling American comics.[19] <br><br>
 
-
+</section>
+</article>
+<form action="">
 </fieldset><br><br></section>
-<fieldset style="width:20% ;"><legend style="border: 3px solid violet; color: darkred;text-decoration: none;">Choose your one fav Anime</legend>
+border-radius: 5px;
+<fieldset style="width:20% ;"><legend style="border: 3px solid violet; color: darkred;text-decoration: none;box-shadow: 3px 3px 3px red;
+border-radius: 5px;
+    ">Choose your one fav Anime</legend>
 
 <label for="One Piece">
     <input type="radio" name="anime" id="One Piece" >One Piece
@@ -92,9 +141,12 @@ background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?
 
 </fieldset><br><br>
 
+
 <fieldset  style="width: 25%;">
 
-<legend style="text-decoration: none;color: blue;border: 3px solid aquamarine;">Choose your one or two fav Manga</legend>
+<legend style="text-decoration: none;color: blue;border: 3px solid aquamarine;
+border-radius: 5px;
+box-shadow:5px 5px 5px red;">Choose your one or two fav Manga</legend>
 <label for="One Piece">
     <input type="checkbox" name="anime" id="One Piece" >One Piece
 </label>
@@ -114,22 +166,134 @@ background-color: rgba(127, 255, 212, 0.527);">Anime or Manga which is the best?
 
 </fieldset>
 
+<div style="padding-left: 150px;">
+<br><br>
+<h2 style="text-align: center;color: red; border: 3px double chartreuse;box-shadow: 5px 5px 10px black; width: 40%;
+border-radius: 5px;
+">Please fill up the from given below</h2>
+<br>
+<label for="name">Your Name:
+    <input type="text" id="name" placeholder="Your Full Name">
+</label>
+<label for="email">Email:
+    <input type="email" id="email" placeholder="Your Email">
+</label>
+<label for="Phone">Phone:
+    <input type="tel" id="Phone" placeholder="Your Phone Number">
+</label>
+<label for="age">Age:
+    <input type="number" id="age" placeholder="Your Age">
+</label>
+<label for="Sex">Sex:
+
+    <select name="" id="Sex">
+<option value="male">Male</option>
+<option value="female">Female</option>
 
 
+    </select>
+</label>
+
+<label for="country">Country:
+    <input type="text" id="country" placeholder="Your Country">
+</label>
+<input type="reset" style="color:red;margin-left: 50px;">
+
+<input type="submit" value="Submit" style="color: blue;margin-left: 12px;">
+</div>
+
+</form>
+
+<table style="margin-left: 220px;margin-top: 85px;
+border-radius: 20px;
+">
+   <caption><h3 style="color:red ; text-decoration:2px underline black;"> About Anime</h3></caption>
+<thead>
+    <th>No.</th>
+    <th>Name</th>
+    <th>imdb ret.</th>
+    <th>Genre</th>
+    <th>Total ep.</th>
+    <th>status</th>
+    <th>Remarks</th>
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td><i>One Piece</i> </td>  
+<td>8.75</td>
+<td>Adventure,action,comedy,Fantasy</td>
+<td>1068</td>
+<td>Ongoing</td>
+<td>All time best</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td><i>Naruto</i></td>
+    <td>8  </td>
+    <td> Action,Emotion,Fantasy </td>
+    <td>720  </td>
+    <td>Finished  </td>
+    <td> Great </td>
+
+</tr>
+<tr>
+    <td>3</td>
+    <td><i>Bleach</i> </td>
+    <td>8.2</td>
+    <td>Action ,Fantasy</td>
+    <td>380</td>
+    <td>Ongoing</td>
+    <td>Best</td>
+</tr>
+<tr>
+    <td>4 </td>
+    <td><i> Attack on Titan</i> </td>
+    <td>9</td>
+    <td>Action,Dark Fantasy,Emotion</td>
+    <td>88</td>
+    <td>Ongoing</td>
+    <td>Best</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td><i>Demon Slayer</i> </td>
+    <td>8.8</td>
+    <td>Action,Demon,Dark Fantasy</td>
+    <td>45</td>
+    <td>Ongoing</td>
+    <td>Greatest</td>
+</tr>
+</tbody>
+<tfoot>
+
+    <tr>
+<td colspan="7" rowspan="3" style="color: red;">
+    More Coming Soon.....
+</td>
+
+</tfoot>
 
 
+</table>    
+ <br><br><br>
+ <form action="">
+ <label for="comment" style="color:red ;margin-left: 50px;margin-bottom: 0px;">Write your Opinion:
+</label>
+<textarea name="" id="" cols="100" rows="10" style="border:3px solid chartreuse;box-shadow: 10px 10px 10px black;padding: 10px 10px;margin-left: 50px;">
 
-</section>
+</textarea>
+<br><br>
+<input type="reset" value="Rewrite comment" style="margin-left: 680px;border: 2px solid red;box-shadow: 3px 3px 3px red;color: blue;">
+</form>
 
+<footer>
 
+&copy;All Rights Reserved by Ashik.
 
-
-
-
-
-</article>
-
-
+</footer>
 
 
 
